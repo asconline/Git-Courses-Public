@@ -1,0 +1,713 @@
+/* Set style for titlepage */
+.titlepage
+	{
+		background-color: #18355e;
+		border: 2px solid;
+		border-radius: 15px;
+		padding: 2%;
+	}
+
+/* Centre main title and make it big */
+.title
+	{
+		font-size: 24pt;
+		text-align: center;
+		font-weight: bold;
+	}
+
+/* Align author name */
+.author 
+	{
+		text-align: center;
+	}
+
+/* Some general setup specs: font and font size; */
+body
+	{
+		font-family: Arial;
+		font-size: 12pt;
+	}
+
+/* Add some padding around list items */
+li
+	{
+		padding: 3px;
+	}
+
+/* Layout for block quotes */
+blockquote
+	{
+		background: #f5eedf;
+		border: 2px solid;
+		border-radius: 15px;
+		padding: 2%;
+	}
+
+/* Make tables prettier */
+table 
+	{
+    	border-collapse: collapse;
+	}
+
+table, th, td 
+	{
+   		border: 1px solid black;
+	}
+
+td 
+	{
+    	text-align: left;
+    	padding: 5px;
+	}
+
+tr:nth-child(odd) 
+ 	{ 
+ 		background-color: gainsboro; 
+ 	}
+
+tr:nth-child(even) 
+	{ 
+		background-color: white; 
+	}
+
+/* Define centred class */
+.centred 
+	{
+		text-align: center;
+	}
+
+/* Make terms bold and red */
+span.term 
+	{
+		font-weight: bold;
+		color: #af1f23;
+	}
+
+/* Make English texts green */
+.en 
+	{	
+		color: #006600;
+	}
+
+/* Make French texts blue */
+.fr 
+	{
+		color: #105bb5;
+	}
+
+/* Classes 'ui-tooltip' and 'arrow' are used by the tooltipster script */
+
+.ui-tooltip, .arrow:after 
+	{
+    	background: black;
+    	border: 2px solid white;
+  	}
+
+.ui-tooltip 
+  	{
+	    padding: 10px 20px;
+	    color: white;
+	    border-radius: 20px;
+	    font: bold 14px "Helvetica Neue", Sans-Serif;
+	    text-transform: uppercase;
+	    box-shadow: 0 0 7px black;
+  	}
+
+.arrow {
+	    width: 70px;
+	    height: 16px;
+	    overflow: hidden;
+	    position: absolute;
+	    left: 50%;
+	    margin-left: -35px;
+	    bottom: -16px;
+  }
+
+.arrow.top 
+  	{
+    	top: -16px;
+    	bottom: auto;
+  	}
+
+.arrow.left 
+  	{
+    	left: 20%;
+  	}
+
+.arrow:after 
+  	{
+	    content: "";
+	    position: absolute;
+	    left: 20px;
+	    top: -20px;
+	    width: 25px;
+	    height: 25px;
+	    box-shadow: 6px 5px 9px -9px black;
+	    -webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	    transform: rotate(45deg);
+  	}
+
+.arrow.top:after 
+ 	{
+    	bottom: -20px;
+    	top: auto;
+  	}
+
+/* The 'audio' class is used in pronouncing text.  See maSound script. Not used in Moodle. */
+audio
+{
+display: none;
+}
+
+/* Set style of presentation sections */
+.presentation
+	{
+		background-color: #fefcf6;
+		border: 2px solid;
+		border-radius: 15px;
+		padding: 2%;
+	}
+
+/* Set style of exploration sections */
+.exploration
+	{
+		background-color: #ebece5;
+		border: 2px solid;
+		border-radius: 15px;
+		padding: 2%
+	}
+
+/* Set style of informal quiz sections */
+.quiz
+	{
+		background-color: white;
+		border: 2px solid;
+		border-radius: 15px;
+		padding: 2%
+	}
+
+/* Determiners turn red when hovered over */
+.det:hover
+	{
+		background-color: red;
+		color: white;
+		font-weight: bold;
+	}
+
+/* Nouns turn blue when hovered over 
+.noun:hover
+	{
+  		background-color:blue;
+  		color: white;
+  		font-weight: bold;
+	}
+*/
+/* Words with this class go to reverse video and blue when hovered over.  Combine with 'gloss' */
+.eng:hover 
+	{ 
+		background-color: blue;
+		color: white;
+	}
+
+/* Set up blocks of translations.  By default, they're hidden, but appear when hovered over */
+.translation
+	{
+		background-color: #c2c3b8;
+		color: #040000;
+		text-align: center;
+	}
+.hide:hover
+	{
+		opacity: 1;
+	}
+
+.hide
+	{
+		opacity: 0;
+	}
+
+
+.translation .trantext
+	{
+		/*display: none;*/
+		visibility: hidden;
+		text-align: left;
+		padding: 3%;
+		opacity: 0;
+		transition:visibility 1s linear 1s,opacity 1s linear;
+	}
+
+.translation:hover .trantext
+	{
+		display: block;
+		padding: 3%;
+		color: black;
+		text-align: left;
+		visibility: visible;
+		opacity: 1;
+/*   -webkit-transition-property: all; 
+    -webkit-transition-duration: 500ms; 
+    -webkit-transition-delay: 500ms; 
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-delay: 500ms;*/
+    transition:visibility 1s linear 1s,opacity 1s linear;
+    
+/*    -webkit-animation: fadeIn 5s;
+    animation: fadeIn 5s;*/
+	}
+
+form
+  {
+    text-align: center;
+  }
+
+/* Put any rubrics (explanations of what to do) in italic */
+.rubric 
+  {
+    font-style: italic;
+  }
+
+/* Set up buttons for cognate and other searches */
+button 
+	{
+		font-size: 16px;
+		border: 2px solid gray;
+/*		border-radius: 100px;
+		width: 100px;
+		height: 100px;*/
+	}
+
+button:active 
+	{
+		font-size: 16px;
+		border: 2px solid red;
+		background-color: green;
+/*		border-radius: 100px;
+		width: 100px;
+		height: 100px;*/
+	}
+
+/* Show all not already found cognates as blue.  Activated by button. */
+.notfound 
+	{
+	  	background-color: blue;
+	    color: white;
+	}
+
+/*Set up classes for the various parts of speech. Nf as prefix means that when a button is 
+clicked, the various not found parts of speech of the particular class are shown.
+See below for script.
+*/
+.nfnoun, .nfverb, .nfadjective, .nfadverb, .nfpreposition, .nfpronoun, .nfdeterminer, .nfadjpos, .nfadjneg
+	{
+	    color: white;
+	    background-color: blue;
+	}
+
+/* Make sure radio buttons turn blue when clicked */
+input[type=radio]:checked + label
+	{
+	    color: white;
+	    background-color: blue;
+	}
+
+/* classes for exercise to find masculine/feminine, singular/plural */
+
+ .nfms, .nffs, .nfmp, .nffp
+	{
+		color: white;
+		background-color: blue;
+	}
+
+.ms .fs .mp .fp
+	{
+		color: white;
+		background-color: gray;
+	}
+
+/* classes for exercise on finding noun phrases, verb phrases, sentence modifiers */
+
+.nfgn
+    {
+      	color: white;
+      	background-color: blue;
+    }
+    
+.nfgv
+    {
+      	color: white;
+      	background-color: orange;
+    }
+    
+.nfgcp
+    {
+      	color: white;
+      	background-color: violet;
+    }
+
+/* classes for moving sentences into boxes */	
+.sentences 
+	{
+      	clear: both;
+    }
+    
+.categories 
+    {        
+    	clear: both;
+        justify-content: center;
+    }
+    
+.buttons 
+    {
+        clear: both;
+    }
+
+.bottom 
+    {
+        clear: both;
+    }
+    
+.decl_string 
+    {
+        width: 120px; height: 80px; padding: 0.5em; float: left;
+        margin: 0px 5px 10px 0; 
+    }
+
+.interr_string 
+    {
+        width: 120px; height: 80px; padding: 0.5em; float: left;
+        margin: 0px 5px 10px 0; 
+    }
+    
+.imper_string 
+    {
+        width: 120px; height: 80px; padding: 0.5em; float: left;
+        margin: 0px 5px 10px 0; 
+    }
+    
+.excl_string 
+    {
+        width: 120px; height: 80px; padding: 0.5em; float: left;
+        margin: 0px 5px 10px 0; 
+    }
+    
+#decl_box 
+    {
+        width: 150px; height: 200px; padding: 0.5em; float: left;
+        margin: 0px 5px 10px 0; 
+    }
+    
+#interr_box 
+    {
+        width: 150px; height: 200px; padding: 0.5em; float: left;
+        margin: 0px 5px 10px 0; 
+    }
+    
+#imper_box 
+    {
+        width: 150px; height: 200px; padding: 0.5em; float: left;
+        margin: 0px 5px 10px 0; 
+    }
+
+#excl_box 
+    {
+        width: 150px; height: 200px; padding: 0.5em; float: left;
+        margin: 0px 5px 10px 0; 
+    }
+
+	.cv {
+		font-family: "Times New Roman";
+		font-size: 20px;
+	}
+	.cv_table, .cv_tr, .cv_td {
+		border: 0;
+	}
+	.cv_header {
+		clear: both;
+		text-align: center;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.cv_header:hover {
+		background-color: #18355e;
+		color: white;
+	}
+
+	.cv_list {
+		clear: both;
+		text-align: left;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.cv_list:hover {
+		background-color: #18355e;
+		color: white;
+	}
+
+	.cv_entry {
+		clear: both;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.dates {
+		clear: both;
+		display: inline-block;
+		float: left;
+		width: 20%;
+    	padding-right: 50px;
+	}
+
+	.info {
+		clear: both;
+		display: inline-block;
+		float: left;
+		width: 60%;
+	}
+
+	.image {
+		overflow: scroll;
+	}
+
+	.clicked {
+		background-color: green;
+	}
+
+	#extraslide {
+		background: orange;
+	}
+
+	#agreeslide {
+		background: pink;
+	}
+
+	#conscslide {
+		background: blue;
+	}
+
+	#emotslide {
+		background: brown;
+	}
+
+	#imagslide {
+		background: red;
+	}
+
+	.spreadlines {
+		line-height: 180%;
+	}
+
+	.cletter {
+		font-family: "Times New Roman";
+		font-size: 20px;
+	}
+	.cletter_table, .cletter_tr, .cletter_td {
+		border: 0;
+	}
+
+	.cletter_address_sender {
+		font-family: "Times New Roman";
+		font-size: 20px;
+		clear: both;
+		text-align: left;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.cletter_address_sender:hover {
+		background-color: #18355e;
+		color: white;
+	}
+
+	.cletter_address_receiver {
+		font-family: "Times New Roman";
+		font-size: 20px;
+		clear: both;
+		text-align: left;
+		display: inline-block;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.cletter_address_receiver:hover {
+		background-color: #18355e;
+		color: white;
+	}
+	.cletter_salutation {
+		font-family: "Times New Roman";
+		font-size: 20px;
+		clear: both;
+		text-align: left;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.cletter_salutation:hover {
+		background-color: #18355e;
+		color: white;
+	}
+
+	.cletter_date {
+		font-family: "Times New Roman";
+		font-size: 20px;
+		clear: both;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		display: inline-block;
+		text-align: left;
+/*    	margin:0 auto;
+    	width:100px;*/
+	}
+	.cletter_date:hover {
+		background-color: #18355e;
+		color: white;
+	}
+
+	.cletter_para {
+		font-family: "Times New Roman";
+		font-size: 20px;
+		clear: both;
+		text-align: left;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.cletter_para:hover {
+		background-color: #18355e;
+		color: white;
+	}
+
+	.cletter_closing {
+		font-family: "Times New Roman";
+		font-size: 20px;
+		clear: both;
+		text-align: left;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	.cletter_closing:hover {
+		background-color: #18355e;
+		color: white;
+	}
+
+	.cletter_signature {
+		font-family: "Times New Roman";
+		font-size: 20px;
+		clear: both;
+		text-align: left;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	.cletter_signature:hover {
+		background-color: #18355e;
+		color: white;
+	}
+	.dates {
+		clear: both;
+		display: inline-block;
+		float: left;
+		width: 20%;
+    	padding-right: 50px;
+	}
+
+	.info {
+		clear: both;
+		display: inline-block;
+		float: left;
+		width: 60%;
+	}
+
+	.image {
+		overflow: scroll;
+	}
+
+	.container {
+		text-align: right;
+		width: 100%;
+	}
+
+   #adjpos_box {
+        width: 300px; height: 300px; padding: 0.5em; float: left;
+        margin: 0px 5px 10px 0; 
+    }
+    
+    #adjneg_box {
+        width: 300px; height: 300px; padding: 0.5em; float: left;
+        margin: 0px 5px 10px 0; 
+    }
+	/* ids for moving parts of a text into paragraph boxes. See module 7 */
+	#par0_box, #par1_box, #par2_box, #par3_box, #par4_box, #par5_box, #par6_box, #par7_box
+    {
+    	clear: both;
+        width: 300px; height: 100px; padding: 0.5em; float: left;
+        margin: 0px 5px 10px 0; 
+    }
+
+	/* ids and classes for swot analysis (see module 8) */
+
+	.strength_string 
+	    {
+	        width: 120px; height: 100px; padding: 0.5em; float: left;
+	        margin: 0px 5px 10px 0; 
+	    }
+
+	.weakness_string 
+	    {
+	        width: 120px; height: 100px; padding: 0.5em; float: left;
+	        margin: 0px 5px 10px 0; 
+	    }
+	    
+	.opportunity_string 
+	    {
+	        width: 120px; height: 100px; padding: 0.5em; float: left;
+	        margin: 0px 5px 10px 0; 
+	    }
+	    
+	.threat_string 
+	    {
+	        width: 120px; height: 100px; padding: 0.5em; float: left;
+	        margin: 0px 5px 10px 0; 
+	    }
+	    
+	#strength_box 
+	    {
+	        clear: both;
+	        width: 250px; height: 250px; padding: 0.5em; float: left;
+	        margin: 0px 5px 10px 0; 
+	    }
+	    
+	#weakness_box 
+	    {
+	        width: 250px; height: 250px; padding: 0.5em; float: left;
+	        margin: 0px 5px 10px 0; 
+	    }
+	    
+	#opportunity_box 
+	    {
+	    	clear: both;
+	        width: 250px; height: 250px; padding: 0.5em; float: left;
+	        margin: 0px 5px 10px 0; 
+	    }
+
+	#threat_box 
+	    {
+	        width: 250px; height: 250px; padding: 0.5em; float: left;
+	        margin: 0px 5px 10px 0; 
+	    }
+
+/* a grid for showing pictures */
+ 	.grid {
+ 		float: right;
+ 		width: 50%;
+ 	}
+
+/* cleaning up the .grid world */
+ 	.closebox {
+ 		clear: both;
+ 	}
+
+/* to allow a picture which extends past the right margin to be scrolled */
+ 	.bigpic {
+ 		overflow-x: scroll;
+ 	}

@@ -1,0 +1,142 @@
+/* Global HTML Styles
+----------------------- */
+html {
+  /* Box-model */
+	margin: 0;
+	padding: 0; 
+	border: 0;
+	
+	/* Visual */
+	background-color: #fff; /* white */  
+	color: #403c3d;         /* dark grey */
+   
+  /* Typography */
+	font-family: Calibri, sans-serif;
+	vertical-align: baseline;
+	color: #403c3d;         /* dark grey */
+	}
+body { 
+
+  /* Visual */
+	background-color: #fff;
+	 
+  /* Global Fonts */
+	font-family: Calibri, sans-serif;
+	font-size: 95%;
+	color: #403c3d;         /* dark grey */
+	}
+/* Headings & Paragraphs
+--------------------*/
+p, h1, h2, h3, h4, h5, h6 {
+	margin-left: 2%;
+	margin-right: 2%;
+}
+h1 { 
+	font-weight: bold;
+	font-size: 230%;
+	}
+h2 { 
+	font-weight: bold;
+	font-size: 200%;
+	}
+h3 { 
+	font-weight: bold;
+	font-size: 160%;
+	}
+h4 { 
+	font-weight: bold;
+	font-size: 120%;
+	}
+/* Links 
+-------------------- */
+a:link { 
+	text-decoration: none; 
+	color: #318396;
+	}
+a:visited {  
+	text-decoration: none; 
+	color: #318396;
+	}
+a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: #318396;
+	}
+/* Title Box
+--------------------*/
+.title {
+	color: #ffffff;
+	background-color: #11335d;
+	width: 95%;
+	line-height: 200%;
+	border-radius: 10px;
+	border: 1px solid;
+	border-color: #11335d;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+	padding-left: 2%;
+	padding-right: 2%;
+	}
+/* Tables
+--------------------*/
+td {
+	padding: 5px;
+}
+table {
+	border: 0px;
+	border-collapse: collapse;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 2%;
+}
+table.border td {
+	border: 1px solid #8b8b8b;
+}
+.timeline {
+	width: 99%;
+	border: 0px;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1em;
+	margin-bottom: 1em;	
+}
+table.padding td {
+		padding: 2px;
+}
+table.padding p, h1, h2, h3, h4, h5, h6 {
+	margin: 1%;
+}
+/* Pagination
+--------------------*/
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+ul.pagination li a.active {
+    background-color: #2C7873;
+    color: white;
+}
+ul.pagination li a:hover:not(.active) {
+	background-color: #ddd;
+}
+/* Images
+********************/
+img {
+	padding: 10px;
+}
+/* Tabs
+********************/
+.tabcontent {
+    display: none;
+}
