@@ -1,0 +1,186 @@
+function OpenPanel() {
+var current = new Date();
+var week1P = new Date("September, 11 2017 00:00:00");
+var week2P = new Date("September, 18 2017 00:00:00");
+var week3P = new Date("September, 25 2017 00:00:00");
+var week4P = new Date("October 2, 2017 00:00:00");
+var week5P = new Date("October 9, 2017 00:00:00");
+var week6P = new Date("October 16, 2017 00:00:00");
+var week7P = new Date("October 23, 2017 00:00:00");
+var week8P = new Date("October 30, 2017 00:00:00");
+var week9P = new Date("November 6, 2017 00:00:00");
+var week10P = new Date("November 13, 2017 00:00:00");
+var week11P = new Date("November 20, 2017 00:00:00");
+var week12P = new Date("November 27, 2017 00:00:00");
+
+switch (true) {
+    case (current > week12P):
+	    document.getElementById("week1collapse").className = "collapse";
+		document.getElementById("week2collapse").className = "collapse";
+		document.getElementById("week3collapse").className = "collapse";
+		document.getElementById("week4collapse").className = "collapse";
+		document.getElementById("week5collapse").className = "collapse";
+		document.getElementById("week6collapse").className = "collapse";
+		document.getElementById("week7collapse").className = "collapse";
+		document.getElementById("week8collapse").className = "collapse";
+		document.getElementById("week9collapse").className = "collapse";
+		document.getElementById("week10collapse").className = "collapse";
+		document.getElementById("week11collapse").className = "collapse";
+		document.getElementById("week12collapse").className = "collapse in";
+		break;
+	case (current > week11P):
+	    document.getElementById("week1collapse").className = "collapse";
+		document.getElementById("week2collapse").className = "collapse";
+		document.getElementById("week3collapse").className = "collapse";
+		document.getElementById("week4collapse").className = "collapse";
+		document.getElementById("week5collapse").className = "collapse";
+		document.getElementById("week6collapse").className = "collapse";
+		document.getElementById("week7collapse").className = "collapse";
+		document.getElementById("week8collapse").className = "collapse";
+		document.getElementById("week9collapse").className = "collapse";
+		document.getElementById("week10collapse").className = "collapse";
+		document.getElementById("week11collapse").className = "collapse in";
+		document.getElementById("week12collapse").className = "collapse";
+		break;
+	case (current > week10P):
+		document.getElementById("week1collapse").className = "collapse";
+		document.getElementById("week2collapse").className = "collapse";
+		document.getElementById("week3collapse").className = "collapse";
+		document.getElementById("week4collapse").className = "collapse";
+		document.getElementById("week5collapse").className = "collapse";
+		document.getElementById("week6collapse").className = "collapse";
+		document.getElementById("week7collapse").className = "collapse";
+		document.getElementById("week8collapse").className = "collapse";
+		document.getElementById("week9collapse").className = "collapse";
+		document.getElementById("week10collapse").className = "collapse in";
+		document.getElementById("week11collapse").className = "collapse";
+		document.getElementById("week12collapse").className = "collapse";
+		break;
+	case (current > week9P):
+	    document.getElementById("week1collapse").className = "collapse";
+		document.getElementById("week2collapse").className = "collapse";
+		document.getElementById("week3collapse").className = "collapse";
+		document.getElementById("week4collapse").className = "collapse";
+		document.getElementById("week5collapse").className = "collapse";
+		document.getElementById("week6collapse").className = "collapse";
+		document.getElementById("week7collapse").className = "collapse";
+		document.getElementById("week8collapse").className = "collapse";
+		document.getElementById("week9collapse").className = "collapse in";
+		document.getElementById("week10collapse").className = "collapse";
+		document.getElementById("week11collapse").className = "collapse";
+		document.getElementById("week12collapse").className = "collapse";
+		break;
+	case (current > week8P):
+	    document.getElementById("week1collapse").className = "collapse";
+		document.getElementById("week2collapse").className = "collapse";
+		document.getElementById("week3collapse").className = "collapse";
+		document.getElementById("week4collapse").className = "collapse";
+		document.getElementById("week5collapse").className = "collapse";
+		document.getElementById("week6collapse").className = "collapse";
+		document.getElementById("week7collapse").className = "collapse";
+		document.getElementById("week8collapse").className = "collapse in";
+		document.getElementById("week9collapse").className = "collapse";
+		document.getElementById("week10collapse").className = "collapse";
+		document.getElementById("week11collapse").className = "collapse";
+		document.getElementById("week12collapse").className = "collapse";
+		break;
+	case (current > week7P):
+	    document.getElementById("week1collapse").className = "collapse";
+		document.getElementById("week2collapse").className = "collapse";
+		document.getElementById("week3collapse").className = "collapse";
+		document.getElementById("week4collapse").className = "collapse";
+		document.getElementById("week5collapse").className = "collapse";
+		document.getElementById("week6collapse").className = "collapse";
+		document.getElementById("week7collapse").className = "collapse in";
+		document.getElementById("week8collapse").className = "collapse";
+		document.getElementById("week9collapse").className = "collapse";
+		document.getElementById("week10collapse").className = "collapse";
+		document.getElementById("week11collapse").className = "collapse";
+		document.getElementById("week12collapse").className = "collapse";
+		break;
+	case (current > week6P):
+	    document.getElementById("week1collapse").className = "collapse";
+		document.getElementById("week2collapse").className = "collapse";
+		document.getElementById("week3collapse").className = "collapse";
+		document.getElementById("week4collapse").className = "collapse";
+		document.getElementById("week5collapse").className = "collapse";
+		document.getElementById("week6collapse").className = "collapse in";
+		document.getElementById("week7collapse").className = "collapse";
+		document.getElementById("week8collapse").className = "collapse";
+		document.getElementById("week9collapse").className = "collapse";
+		document.getElementById("week10collapse").className = "collapse";
+		document.getElementById("week11collapse").className = "collapse";
+		document.getElementById("week12collapse").className = "collapse";
+		break;
+	case (current > week5P):
+	    document.getElementById("week1collapse").className = "collapse";
+		document.getElementById("week2collapse").className = "collapse";
+		document.getElementById("week3collapse").className = "collapse";
+		document.getElementById("week4collapse").className = "collapse";
+		document.getElementById("week5collapse").className = "collapse in";
+		document.getElementById("week6collapse").className = "collapse";
+		document.getElementById("week7collapse").className = "collapse";
+		document.getElementById("week8collapse").className = "collapse";
+		document.getElementById("week9collapse").className = "collapse";
+		document.getElementById("week10collapse").className = "collapse";
+		document.getElementById("week11collapse").className = "collapse";
+		document.getElementById("week12collapse").className = "collapse";
+		break;
+	case (current > week4P):
+	    document.getElementById("week1collapse").className = "collapse";
+		document.getElementById("week2collapse").className = "collapse";
+		document.getElementById("week3collapse").className = "collapse";
+		document.getElementById("week4collapse").className = "collapse in";
+		document.getElementById("week5collapse").className = "collapse";
+		document.getElementById("week6collapse").className = "collapse";
+		document.getElementById("week7collapse").className = "collapse";
+		document.getElementById("week8collapse").className = "collapse";
+		document.getElementById("week9collapse").className = "collapse";
+		document.getElementById("week10collapse").className = "collapse";
+		document.getElementById("week11collapse").className = "collapse";
+		document.getElementById("week12collapse").className = "collapse";
+		break;
+	case (current > week3P):
+	    document.getElementById("week1collapse").className = "collapse";
+		document.getElementById("week2collapse").className = "collapse";
+		document.getElementById("week3collapse").className = "collapse in";
+		document.getElementById("week4collapse").className = "collapse";
+		document.getElementById("week5collapse").className = "collapse";
+		document.getElementById("week6collapse").className = "collapse";
+		document.getElementById("week7collapse").className = "collapse";
+		document.getElementById("week8collapse").className = "collapse";
+		document.getElementById("week9collapse").className = "collapse";
+		document.getElementById("week10collapse").className = "collapse";
+		document.getElementById("week11collapse").className = "collapse";
+		document.getElementById("week12collapse").className = "collapse";
+		break;
+	case (current > week2P):
+	    document.getElementById("week1collapse").className = "collapse";
+		document.getElementById("week2collapse").className = "collapse in";
+		document.getElementById("week3collapse").className = "collapse";
+		document.getElementById("week4collapse").className = "collapse";
+		document.getElementById("week5collapse").className = "collapse";
+		document.getElementById("week6collapse").className = "collapse";
+		document.getElementById("week7collapse").className = "collapse";
+		document.getElementById("week8collapse").className = "collapse";
+		document.getElementById("week9collapse").className = "collapse";
+		document.getElementById("week10collapse").className = "collapse";
+		document.getElementById("week11collapse").className = "collapse";
+		document.getElementById("week12collapse").className = "collapse";
+		break;
+	case (current > week1P):
+	    document.getElementById("week1collapse").className = "collapse in";
+	    document.getElementById("week2collapse").className = "collapse";
+		document.getElementById("week3collapse").className = "collapse";
+		document.getElementById("week4collapse").className = "collapse";
+		document.getElementById("week5collapse").className = "collapse";
+		document.getElementById("week6collapse").className = "collapse";
+		document.getElementById("week7collapse").className = "collapse";
+		document.getElementById("week8collapse").className = "collapse";
+		document.getElementById("week9collapse").className = "collapse";
+		document.getElementById("week10collapse").className = "collapse";
+		document.getElementById("week11collapse").className = "collapse";
+		document.getElementById("week12collapse").className = "collapse";
+		break;
+}
+}

@@ -1,0 +1,145 @@
+body 
+{
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    overflow: hidden; /* no scrollbar */
+}
+
+#phtml
+{
+  position: absolute;
+  z-index:1;
+}
+
+#tutorial-text
+{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 2.0em;
+  text-align: center;
+}
+
+svg
+{
+    padding: 0;
+    margin: 0;
+}
+
+/* Make edges crisp, i.e. 1px-wide lines take exactly one pixel */
+.axis, .crisp, .svg-button rect, .svg-frame {
+  shape-rendering: crispEdges;
+}
+
+/* Same same font for all text */
+.applet-text, .axis text, .current-value-bar text, .svg-button text, .ruler-tick-text, .label {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+/* Font size: buttons*/
+.svg-button {
+  font-size: 16pt;
+}
+
+#applet {
+  position: relative;
+}
+/* Font size: tick text*/
+/*
+.axis text, .ruler-tick-text {
+  font-size: 10pt;
+}
+*/
+
+/* Font size: histogram label*/
+.label {
+  font-size: 16pt;
+  fill: black;
+}
+
+.noselect
+{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* axis lines and ticks */
+.axis path, .axis line {
+  fill: none;
+  stroke: black; /*#555;*/
+  stroke-width: 1px;
+}
+
+.axis text {
+  fill: black;
+}
+
+.axis text {
+  fill: black;
+}
+.current-value-bar text {
+  fill: #f00;
+}
+
+.histogram-individuals-box
+{
+  shape-rendering: crispEdges;
+}
+
+.histogram-means-box
+{
+  shape-rendering: crispEdges;
+}
+
+.histogram-individuals-stable-box
+{
+  shape-rendering: crispEdges;
+}
+
+.histogram-means-stable-box
+{
+  shape-rendering: crispEdges;
+}
+
+/*
+.svg-frame
+{
+  shape-rendering: crispEdges;
+}
+
+.svg-button
+{
+  shape-rendering: crispEdges;
+}
+*/
+/*
+.histogram-individual:hover
+{
+  fill:#f00;
+}
+*/
+.drawingAlert
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11pt;
+  color: red;
+}
+
+ .length-histogram-widget
+{
+  pointer-events: auto;
+  cursor: auto;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none; 
+} 
+
