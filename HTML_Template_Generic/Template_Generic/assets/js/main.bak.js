@@ -20,9 +20,9 @@ var indateLSummer = new Date("June 28, 2021 00:00:01"); 	// input date
 // exam dates
 var examF = "Dec 10-23, 2020";
 var examW = "Apr 14-30, 2021";
-var examNS1 = "Jun 24-25, 2020";
-var examNS2 = "Aug 3-7, 2020";
-var examS = "Aug 16-17, 2020";
+var examNS1 = "Jun 24-25, 2021";
+var examNS2 = "Aug 3-7, 2021";
+var examS = "Aug 16-17, 2021";
 
 // end of the part that needs to be updated
 
