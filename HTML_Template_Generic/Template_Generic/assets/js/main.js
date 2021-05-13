@@ -554,3 +554,75 @@ var app1 = new Vue({
     AcademicSupport: '<p>All undergraduate students face new learning and writing challenges as they progress through university: essays and reports become more complex; effectively incorporating research into writing becomes more important; the types of assignments become more diverse; managing your time and developing the skills you need to read and think critically gets more challenging. I encourage students to contact <strong>Student Academic Success Services (SASS)</strong>. SASS offers many different ways to receive support:</p><ul><li>Free online or in-person <a href="https://sass.queensu.ca/programs/appointments/" target="_blank" rel="noopener">appointments</a> to get personalized support on writing and academic skills from expert staff and trained peers.</li><li><a href="https://sass.queensu.ca/programs/workshops/" target="_blank" rel="noopener">Workshops</a> and <a href="https://sass.queensu.ca/drop-in/" target="_blank" rel="noopener">drop-in programs</a>. SASS&rsquo; <a href="https://sass.queensu.ca/events/" target="_blank" rel="noopener">Events Calendar lists events coming soon</a>.</li><li><a href="https://sass.queensu.ca/onlineresource/topics/#WC" target="_blank" rel="noopener">Online resources</a> that provide strategies for academic skills and writing development at university.</li><li>If English is not your first language, SASS has specific resources for <a href="https://sass.queensu.ca/eal/" target="_blank" rel="noopener">English as Additional Language students</a>, including weekly programs and EAL academic skills appointments. You can meet on an ongoing basis with an EAL consultant to work on your academic writing, speaking, listening, and reading skills.</li></ul>'
   }
 })
+
+var app2 = new Vue({
+  el: '.container-fluid',
+  data: {
+    FallTuitionDue: 'TBD',
+    FallClassesStart: 'Sep 7',
+    FallAdd: 'Sep 20',
+    FallFinDrop: 'Sep 20',
+    FallAcadDrop: 'Nov 1',
+    FallExamCentre: 'TBD',
+    FallAccomm: 'TBD',
+    FallClassesEnd: 'Dec 3',
+    FallExams: 'Dec 8-22',
+    WinterTuitionDue: 'Jan 10',
+    WinterClassesStart: 'Jan 11',
+    WinterAdd: 'Jan 22',
+    WinterFinDrop: 'Jan 22',
+    WinterAcadDrop: 'Mar 5',
+    WinterExamCentre: 'N/A',
+    WinterAccomm: 'Mar 7',
+    WinterClassesEnd: 'Apr 9',
+    WinterExams: 'Apr 14-30',
+    FallWinterTuitionDue: 'Sep 30',
+    FallWinterClassesStart: 'Sep 8',
+    FallWinterAdd: 'Sep 21',
+    FallWinterFinDrop: 'Nov 2',
+    FallWinterFallExamCentre: 'N/A',
+    FallWinterFallAccomm: 'Nov 7',
+    FallWinterFallExams: 'Dec 10-23',
+    FallWinterAcadDrop: 'Mar 5',
+    FallWinterWinterExamCentre: 'N/A',
+    FallWinterWinterAccomm: 'Mar 7',
+    FallWinterClassesEnd: 'Apr 9',
+    FallWinterWinterExams: 'Apr 14-30',
+    SpringTuitionDue: 'May 1',
+    SpringClassesStart: 'May 10',
+    SpringAdd: 'May 14',
+    SpringFinDrop: 'May 14',
+    SpringExamCentre: 'N/A',
+    SpringAccomm: 'Jun 7',
+    SpringAcadDrop: 'Jun 4',
+    SpringClassesEnd: 'Jun 21',
+    SpringExams: 'Jun 24-26',
+    SpringSummerTuitionDue: 'May 1',
+    SpringSummerClassesStart: 'May 10',
+    SpringSummerAdd: 'May 14',
+    SpringSummerFinDrop: 'May 21',
+    SpringSummerAcadDrop: 'Jul 2',
+    SpringSummerExamCentre: 'N/A',
+    SpringSummerAccomm: 'Jun 7',
+    SpringSummerClassesEnd: 'Jul 30',
+    SpringSummerExams: 'Aug 3-7',
+    SummerTuitionDue: 'Jul 1',
+    SummerClassesStart: 'Jul 5',
+    SummerAdd: 'Jul 9',
+    SummerFinDrop: 'Jul 9',
+    SummerExamCentre: 'N/A',
+    SummerAccomm: 'Jul 16',
+    SummerAcadDrop: 'Jul 29',
+    SummerClassesEnd: 'Aug 13',
+    SummerExams: 'Aug 16-17'
+  }
+})
+/*END of Vue.js scripts*/
+
+/*START Retrieve section number for link to tab*/
+$("a").not("[data-toggle*='tab']").click(function() {
+    var value = $(this).attr('href');
+    var SplitSectionHrefNumber = value.split('section')[1];
+    localStorage.setItem("sectionHrefNumber", SplitSectionHrefNumber);
+});
+/*END Retrieve section number*/
