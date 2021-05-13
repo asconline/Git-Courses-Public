@@ -20,7 +20,7 @@ var indateLSummer = new Date("June 28, 2021 00:00:01"); 	// input date
 // exam dates
 var examF = "Dec 10-23, 2020";
 var examW = "Apr 14-30, 2021";
-var examNS1 = "Jun 24-25, 2021";
+var examNS1 = "Jun 24-26, 2021";
 var examNS2 = "Aug 3-7, 2021";
 var examS = "Aug 16-17, 2021";
 
@@ -578,7 +578,7 @@ var app2 = new Vue({
     SpringAccomm: 'Jun 7',
     SpringAcadDrop: 'Jun 4',
     SpringClassesEnd: 'Jun 21',
-    SpringExams: 'Jun 24-25',
+    SpringExams: 'Jun 24-26',
     SpringSummerTuitionDue: 'May 1',
     SpringSummerClassesStart: 'May 10',
     SpringSummerAdd: 'May 14',
