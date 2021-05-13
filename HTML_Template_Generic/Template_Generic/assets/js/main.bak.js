@@ -11,14 +11,14 @@ function ChangeDates () {
 
 //	this is the only area that needs to be updated
 // 	set the start dates as Monday one week prior to semester start
-var indateFall = new Date("August 31, 2020 00:00:01"); 	// input date
-var fallStart = new Date("September 8, 2020 00:00:01");  // thursday fall start date
+var indateFall = new Date("August 30, 2021 00:00:01"); 	// input date
+var fallStart = new Date("September 7, 2021 00:00:01");  // Semester fall start date
 var indateWinter = new Date("January 4, 2021 00:00:01"); 	// input date
 var indateSummer = new Date("May 3, 2021 00:00:01"); 	// input date
 var indateLSummer = new Date("June 28, 2021 00:00:01"); 	// input date
 
 // exam dates
-var examF = "Dec 10-23, 2020";
+var examF = "Dec 8-22, 2021";
 var examW = "Apr 14-30, 2021";
 var examNS1 = "Jun 24-26, 2021";
 var examNS2 = "Aug 3-7, 2021";
@@ -30,7 +30,8 @@ var examS = "Aug 16-17, 2021";
 // UNLESS YOU KNOW WHAT YOU ARE DOING
 
 // Calculated dates
-var readingweek; // calculated post wk 5 Mon-Fri
+var readingweekW; // calculated post wk 5 Mon-Fri
+var readingweekF;
 
 // create the arrays
 // (don't forget everything starts at 0)
@@ -106,7 +107,7 @@ for(var i = 0; i < 16; i++){ // cycle through weeks
     nmonthSun = mvWeekF.getMonth();
     monthSun = mvWeekF.toLocaleString("en-us", { month: "short" });
 
-    if(i==1){// first week of term starts on a thursday of the prior week
+    if(i==1){// first week of term starts on a different day than Monday week 1
     arrweekF[1] = fallStart.toLocaleString("en-us", { month: "short" }) + " " + fallStart.getDate() + " - " + daySun.toString()+ "\n";
     }
 
@@ -120,6 +121,16 @@ for(var i = 0; i < 16; i++){ // cycle through weeks
     }
 
      mvWeekF.setDate(mvWeekF.getDate()+1); // bring it to the next Monday
+     //checks and intersperses a reading week
+     if(i == 5){
+ 		dayTue = mvWeekF.getDate()+1;
+ 		monthMon = mvWeekF.toLocaleString("en-us", { month: "short" });
+ 		mvWeekW.setDate(mvWeekF.getDate()+4); // brings it to Friday
+ 		dayFri = dayTue+3;
+         monthSun = mvWeekF.toLocaleString("en-us", { month: "short" });
+ 		readingweekF = monthMon.toString() + " " + dayTue.toString() +" - " + 	dayFri.toString();
+     	mvWeekF.setDate(mvWeekW.getDate()+3); // brings it to next week
+     }
 
     // WINTER wks
     // intersperces a reading week after week 5
@@ -151,7 +162,7 @@ for(var i = 0; i < 16; i++){ // cycle through weeks
 		mvWeekW.setDate(mvWeekW.getDate()+4); // brings it to Friday
 		dayFri = dayTue+3;
         monthSun = mvWeekW.toLocaleString("en-us", { month: "short" });
-		readingweek = monthMon.toString() + " " + dayTue.toString() +" - " + 	dayFri.toString();
+		readingweekW = monthMon.toString() + " " + (dayTue.toString()-7) +" - " + 	(dayFri.toString()-7);
     	mvWeekW.setDate(mvWeekW.getDate()+3); // brings it to next week
     }
 
@@ -214,6 +225,12 @@ for(var i = 0; i < 16; i++){ // cycle through weeks
         month = movedateF.toLocaleString("en-us", { month: "short" });
         arrdaysF[i][j] = month.toString() +" "+  day.toString();
         movedateF.setDate(movedateF.getDate()+1); // increment the day by one
+        //checks and intersperses a reading week
+       	if(i == 5){
+       		if(j == 6){
+              	movedateF.setDate(movedateF.getDate()+7);
+            }
+        }
 
 		// Winter Days
         // intersperses a reading week after week 5
@@ -336,7 +353,8 @@ document.getElementsByTagName("body")[0].innerHTML = document.getElementsByTagNa
 document.getElementsByTagName("body")[0].innerHTML = document.getElementsByTagName("body")[0].innerHTML.replace(/examNS1/g, examNS1);
 document.getElementsByTagName("body")[0].innerHTML = document.getElementsByTagName("body")[0].innerHTML.replace(/examNS2/g, examNS2);
 document.getElementsByTagName("body")[0].innerHTML = document.getElementsByTagName("body")[0].innerHTML.replace(/examS/g, examS);
-document.getElementsByTagName("body")[0].innerHTML = document.getElementsByTagName("body")[0].innerHTML.replace(/readingweek/g, readingweek);
+document.getElementsByTagName("body")[0].innerHTML = document.getElementsByTagName("body")[0].innerHTML.replace(/readingweekW/g, readingweekW);
+document.getElementsByTagName("body")[0].innerHTML = document.getElementsByTagName("body")[0].innerHTML.replace(/readingweekF/g, readingweekF);
 }
 /*END of Change Date function*/
 
@@ -540,15 +558,15 @@ var app1 = new Vue({
 var app2 = new Vue({
   el: '.container-fluid',
   data: {
-    FallTuitionDue: 'Sep 30',
-    FallClassesStart: 'Sep 8',
-    FallAdd: 'Sep 21',
-    FallFinDrop: 'Nov 2',
-    FallAcadDrop: 'Nov 2',
-    FallExamCentre: 'N/A',
-    FallAccomm: 'Nov 7',
-    FallClassesEnd: 'Dec 7',
-    FallExams: 'Dec 10-23',
+    FallTuitionDue: 'TBD',
+    FallClassesStart: 'Sep 7',
+    FallAdd: 'Sep 20',
+    FallFinDrop: 'Sep 20',
+    FallAcadDrop: 'Nov 1',
+    FallExamCentre: 'TBD',
+    FallAccomm: 'TBD',
+    FallClassesEnd: 'Dec 3',
+    FallExams: 'Dec 8-22',
     WinterTuitionDue: 'Jan 10',
     WinterClassesStart: 'Jan 11',
     WinterAdd: 'Jan 22',

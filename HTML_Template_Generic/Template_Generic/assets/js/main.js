@@ -11,14 +11,14 @@ function ChangeDates () {
 
 //	this is the only area that needs to be updated
 // 	set the start dates as Monday one week prior to semester start
-var indateFall = new Date("August 31, 2020 00:00:01"); 	// input date
-var fallStart = new Date("September 8, 2020 00:00:01");  // thursday fall start date
+var indateFall = new Date("August 30, 2021 00:00:01"); 	// input date
+var fallStart = new Date("September 7, 2021 00:00:01");  // Semester fall start date
 var indateWinter = new Date("January 4, 2021 00:00:01"); 	// input date
 var indateSummer = new Date("May 3, 2021 00:00:01"); 	// input date
 var indateLSummer = new Date("June 28, 2021 00:00:01"); 	// input date
 
 // exam dates
-var examF = "Dec 10-23, 2020";
+var examF = "Dec 8-22, 2021";
 var examW = "Apr 14-30, 2021";
 var examNS1 = "Jun 24-26, 2021";
 var examNS2 = "Aug 3-7, 2021";
@@ -30,7 +30,8 @@ var examS = "Aug 16-17, 2021";
 // UNLESS YOU KNOW WHAT YOU ARE DOING
 
 // Calculated dates
-var readingweek; // calculated post wk 5 Mon-Fri
+var readingweekW; // calculated post wk 5 Mon-Fri
+var readingweekF;
 
 // create the arrays
 // (don't forget everything starts at 0)
@@ -106,7 +107,7 @@ for(var i = 0; i < 16; i++){ // cycle through weeks
     nmonthSun = mvWeekF.getMonth();
     monthSun = mvWeekF.toLocaleString("en-us", { month: "short" });
 
-    if(i==1){// first week of term starts on a thursday of the prior week
+    if(i==1){// first week of term starts on a different day than Monday week 1
     arrweekF[1] = fallStart.toLocaleString("en-us", { month: "short" }) + " " + fallStart.getDate() + " - " + daySun.toString()+ "\n";
     }
 
@@ -120,6 +121,16 @@ for(var i = 0; i < 16; i++){ // cycle through weeks
     }
 
      mvWeekF.setDate(mvWeekF.getDate()+1); // bring it to the next Monday
+     //checks and intersperses a reading week
+     if(i == 5){
+ 		dayTue = mvWeekF.getDate()+1;
+ 		monthMon = mvWeekF.toLocaleString("en-us", { month: "short" });
+ 		mvWeekW.setDate(mvWeekF.getDate()+4); // brings it to Friday
+ 		dayFri = dayTue+3;
+         monthSun = mvWeekF.toLocaleString("en-us", { month: "short" });
+ 		readingweekF = monthMon.toString() + " " + dayTue.toString() +" - " + 	dayFri.toString();
+     	mvWeekF.setDate(mvWeekW.getDate()+3); // brings it to next week
+     }
 
     // WINTER wks
     // intersperces a reading week after week 5
@@ -151,7 +162,7 @@ for(var i = 0; i < 16; i++){ // cycle through weeks
 		mvWeekW.setDate(mvWeekW.getDate()+4); // brings it to Friday
 		dayFri = dayTue+3;
         monthSun = mvWeekW.toLocaleString("en-us", { month: "short" });
-		readingweek = monthMon.toString() + " " + dayTue.toString() +" - " + 	dayFri.toString();
+		readingweekW = monthMon.toString() + " " + (dayTue.toString()-7) +" - " + 	(dayFri.toString()-7);
     	mvWeekW.setDate(mvWeekW.getDate()+3); // brings it to next week
     }
 
@@ -214,6 +225,12 @@ for(var i = 0; i < 16; i++){ // cycle through weeks
         month = movedateF.toLocaleString("en-us", { month: "short" });
         arrdaysF[i][j] = month.toString() +" "+  day.toString();
         movedateF.setDate(movedateF.getDate()+1); // increment the day by one
+        //checks and intersperses a reading week
+       	if(i == 5){
+       		if(j == 6){
+              	movedateF.setDate(movedateF.getDate()+7);
+            }
+        }
 
 		// Winter Days
         // intersperses a reading week after week 5
@@ -336,7 +353,8 @@ document.getElementsByTagName("body")[0].innerHTML = document.getElementsByTagNa
 document.getElementsByTagName("body")[0].innerHTML = document.getElementsByTagName("body")[0].innerHTML.replace(/examNS1/g, examNS1);
 document.getElementsByTagName("body")[0].innerHTML = document.getElementsByTagName("body")[0].innerHTML.replace(/examNS2/g, examNS2);
 document.getElementsByTagName("body")[0].innerHTML = document.getElementsByTagName("body")[0].innerHTML.replace(/examS/g, examS);
-document.getElementsByTagName("body")[0].innerHTML = document.getElementsByTagName("body")[0].innerHTML.replace(/readingweek/g, readingweek);
+document.getElementsByTagName("body")[0].innerHTML = document.getElementsByTagName("body")[0].innerHTML.replace(/readingweekW/g, readingweekW);
+document.getElementsByTagName("body")[0].innerHTML = document.getElementsByTagName("body")[0].innerHTML.replace(/readingweekF/g, readingweekF);
 }
 /*END of Change Date function*/
 
@@ -536,75 +554,3 @@ var app1 = new Vue({
     AcademicSupport: '<p>All undergraduate students face new learning and writing challenges as they progress through university: essays and reports become more complex; effectively incorporating research into writing becomes more important; the types of assignments become more diverse; managing your time and developing the skills you need to read and think critically gets more challenging. I encourage students to contact <strong>Student Academic Success Services (SASS)</strong>. SASS offers many different ways to receive support:</p><ul><li>Free online or in-person <a href="https://sass.queensu.ca/programs/appointments/" target="_blank" rel="noopener">appointments</a> to get personalized support on writing and academic skills from expert staff and trained peers.</li><li><a href="https://sass.queensu.ca/programs/workshops/" target="_blank" rel="noopener">Workshops</a> and <a href="https://sass.queensu.ca/drop-in/" target="_blank" rel="noopener">drop-in programs</a>. SASS&rsquo; <a href="https://sass.queensu.ca/events/" target="_blank" rel="noopener">Events Calendar lists events coming soon</a>.</li><li><a href="https://sass.queensu.ca/onlineresource/topics/#WC" target="_blank" rel="noopener">Online resources</a> that provide strategies for academic skills and writing development at university.</li><li>If English is not your first language, SASS has specific resources for <a href="https://sass.queensu.ca/eal/" target="_blank" rel="noopener">English as Additional Language students</a>, including weekly programs and EAL academic skills appointments. You can meet on an ongoing basis with an EAL consultant to work on your academic writing, speaking, listening, and reading skills.</li></ul>'
   }
 })
-
-var app2 = new Vue({
-  el: '.container-fluid',
-  data: {
-    FallTuitionDue: 'Sep 30',
-    FallClassesStart: 'Sep 8',
-    FallAdd: 'Sep 21',
-    FallFinDrop: 'Nov 2',
-    FallAcadDrop: 'Nov 2',
-    FallExamCentre: 'N/A',
-    FallAccomm: 'Nov 7',
-    FallClassesEnd: 'Dec 7',
-    FallExams: 'Dec 10-23',
-    WinterTuitionDue: 'Jan 10',
-    WinterClassesStart: 'Jan 11',
-    WinterAdd: 'Jan 22',
-    WinterFinDrop: 'Jan 22',
-    WinterAcadDrop: 'Mar 5',
-    WinterExamCentre: 'N/A',
-    WinterAccomm: 'Mar 7',
-    WinterClassesEnd: 'Apr 9',
-    WinterExams: 'Apr 14-30',
-    FallWinterTuitionDue: 'Sep 30',
-    FallWinterClassesStart: 'Sep 8',
-    FallWinterAdd: 'Sep 21',
-    FallWinterFinDrop: 'Nov 2',
-    FallWinterFallExamCentre: 'N/A',
-    FallWinterFallAccomm: 'Nov 7',
-    FallWinterFallExams: 'Dec 10-23',
-    FallWinterAcadDrop: 'Mar 5',
-    FallWinterWinterExamCentre: 'N/A',
-    FallWinterWinterAccomm: 'Mar 7',
-    FallWinterClassesEnd: 'Apr 9',
-    FallWinterWinterExams: 'Apr 14-30',
-    SpringTuitionDue: 'May 1',
-    SpringClassesStart: 'May 10',
-    SpringAdd: 'May 14',
-    SpringFinDrop: 'May 14',
-    SpringExamCentre: 'N/A',
-    SpringAccomm: 'Jun 7',
-    SpringAcadDrop: 'Jun 4',
-    SpringClassesEnd: 'Jun 21',
-    SpringExams: 'Jun 24-26',
-    SpringSummerTuitionDue: 'May 1',
-    SpringSummerClassesStart: 'May 10',
-    SpringSummerAdd: 'May 14',
-    SpringSummerFinDrop: 'May 21',
-    SpringSummerAcadDrop: 'Jul 2',
-    SpringSummerExamCentre: 'N/A',
-    SpringSummerAccomm: 'Jun 7',
-    SpringSummerClassesEnd: 'Jul 30',
-    SpringSummerExams: 'Aug 3-7',
-    SummerTuitionDue: 'Jul 1',
-    SummerClassesStart: 'Jul 5',
-    SummerAdd: 'Jul 9',
-    SummerFinDrop: 'Jul 9',
-    SummerExamCentre: 'N/A',
-    SummerAccomm: 'Jul 16',
-    SummerAcadDrop: 'Jul 29',
-    SummerClassesEnd: 'Aug 13',
-    SummerExams: 'Aug 16-17'
-  }
-})
-/*END of Vue.js scripts*/
-
-/*START Retrieve section number for link to tab*/
-$("a").not("[data-toggle*='tab']").click(function() {
-    var value = $(this).attr('href');
-    var SplitSectionHrefNumber = value.split('section')[1];
-    localStorage.setItem("sectionHrefNumber", SplitSectionHrefNumber);
-});
-/*END Retrieve section number*/
