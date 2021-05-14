@@ -21,8 +21,8 @@ var indateLSummer = new Date("June 28, 2021 00:00:01"); 	// input date
 var examF = "Dec 8-22, 2021";
 var examW = "Apr 14-30, 2021";
 var examNS1 = "Jun 24-26, 2021";
-var examNS2 = "Aug 3-7, 2021";
-var examS = "Aug 16-17, 2021";
+var examNS2 = "Aug 3-10, 2021";
+var examS = "Aug 16-18, 2021";
 
 // end of the part that needs to be updated
 
@@ -605,7 +605,7 @@ var app2 = new Vue({
     SpringSummerExamCentre: 'N/A',
     SpringSummerAccomm: 'Jun 7',
     SpringSummerClassesEnd: 'Jul 30',
-    SpringSummerExams: 'Aug 3-7',
+    SpringSummerExams: 'Aug 3-10',
     SummerTuitionDue: 'Jul 1',
     SummerClassesStart: 'Jul 5',
     SummerAdd: 'Jul 9',
@@ -614,7 +614,7 @@ var app2 = new Vue({
     SummerAccomm: 'Jul 16',
     SummerAcadDrop: 'Jul 29',
     SummerClassesEnd: 'Aug 13',
-    SummerExams: 'Aug 16-17'
+    SummerExams: 'Aug 16-18'
   }
 })
 /*END of Vue.js scripts*/
