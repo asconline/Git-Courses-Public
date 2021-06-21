@@ -13,13 +13,13 @@ function ChangeDates () {
 // 	set the start dates as Monday one week prior to semester start
 var indateFall = new Date("August 30, 2021 00:00:01"); 	// input date
 var fallStart = new Date("September 7, 2021 00:00:01");  // Semester fall start date
-var indateWinter = new Date("January 4, 2021 00:00:01"); 	// input date
+var indateWinter = new Date("January 3, 2022 00:00:01"); 	// input date
 var indateSummer = new Date("May 3, 2021 00:00:01"); 	// input date
 var indateLSummer = new Date("June 28, 2021 00:00:01"); 	// input date
 
 // exam dates
 var examF = "Dec 8-22, 2021";
-var examW = "Apr 14-30, 2021";
+var examW = "Apr 14-30, 2022";
 var examNS1 = "Jun 24-26, 2021";
 var examNS2 = "Aug 3-10, 2021";
 var examS = "Aug 16-18, 2021";
@@ -583,10 +583,10 @@ var app2 = new Vue({
     FallWinterFallExamCentre: 'N/A',
     FallWinterFallAccomm: 'Nov 7',
     FallWinterFallExams: 'Dec 10-23',
-    FallWinterAcadDrop: 'Mar 5',
+    FallWinterAcadDrop: 'Mar 4',
     FallWinterWinterExamCentre: 'N/A',
-    FallWinterWinterAccomm: 'Mar 7',
-    FallWinterClassesEnd: 'Apr 9',
+    FallWinterWinterAccomm: 'TBD',
+    FallWinterClassesEnd: 'Apr 8',
     FallWinterWinterExams: 'Apr 14-30',
     SpringTuitionDue: 'May 1',
     SpringClassesStart: 'May 10',
