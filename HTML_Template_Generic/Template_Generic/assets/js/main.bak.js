@@ -125,11 +125,11 @@ for(var i = 0; i < 16; i++){ // cycle through weeks
      if(i == 5){
  		dayTue = mvWeekF.getDate()+1;
  		monthMon = mvWeekF.toLocaleString("en-us", { month: "short" });
- 		mvWeekW.setDate(mvWeekF.getDate()+4); // brings it to Friday
+ 		mvWeekF.setDate(mvWeekF.getDate()+4); // brings it to Friday
  		dayFri = dayTue+3;
          monthSun = mvWeekF.toLocaleString("en-us", { month: "short" });
  		readingweekF = monthMon.toString() + " " + dayTue.toString() +" - " + 	dayFri.toString();
-     	mvWeekF.setDate(mvWeekW.getDate()+3); // brings it to next week
+     	mvWeekF.setDate(mvWeekF.getDate()+3); // brings it to next week
      }
 
     // WINTER wks
@@ -156,13 +156,13 @@ for(var i = 0; i < 16; i++){ // cycle through weeks
 
 	mvWeekW.setDate(mvWeekW.getDate()+1); // bring it to the next Monday
     //checks and intersperses a reading week
-    if(i == 5){
+    if(i == 6){
 		dayTue = mvWeekW.getDate()+1;
 		monthMon = mvWeekW.toLocaleString("en-us", { month: "short" });
 		mvWeekW.setDate(mvWeekW.getDate()+4); // brings it to Friday
 		dayFri = dayTue+3;
         monthSun = mvWeekW.toLocaleString("en-us", { month: "short" });
-		readingweekW = monthMon.toString() + " " + (dayTue.toString()-7) +" - " + 	(dayFri.toString()-7);
+		readingweekW = monthMon.toString() + " " + (dayTue.toString()) +" - " + 	(dayFri.toString());
     	mvWeekW.setDate(mvWeekW.getDate()+3); // brings it to next week
     }
 
@@ -239,7 +239,7 @@ for(var i = 0; i < 16; i++){ // cycle through weeks
         arrdaysW[i][j] = month.toString() +" "+  day.toString();
         movedateW.setDate(movedateW.getDate()+1); // increment the day by one
        	//checks and intersperses a reading week
-       	if(i == 5){
+       	if(i == 6){
        		if(j == 6){
               	movedateW.setDate(movedateW.getDate()+7);
             }
