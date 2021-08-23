@@ -1,4 +1,4 @@
-/* Change Dates on the Timeline  */
+/* Change Dates on the Timeline*/
 function ChangeDates () {
 // COMMENTS ON USAGE
 // notes: everything starts with index zero, due to the structure of javascript
