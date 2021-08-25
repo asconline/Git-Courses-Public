@@ -582,7 +582,7 @@ var app2 = new Vue({
     FallWinterFinDrop: 'Sep 20',
     FallWinterFallExamCentre: 'N/A',
     FallWinterFallAccomm: 'TBD',
-    FallWinterFallExams: 'Dec 10-23',
+    FallWinterFallExams: 'Dec 8-22',
     FallWinterAcadDrop: 'Mar 4',
     FallWinterWinterExamCentre: 'N/A',
     FallWinterWinterAccomm: 'TBD',
