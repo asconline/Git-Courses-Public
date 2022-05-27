@@ -1,0 +1,65 @@
+.divider {background-color: #662d91; width: 100%; border: 1px solid #662d91; margin: 1em auto;}
+
+.section-block {text-align: center; padding-top: 0.25em; padding-bottom: 0.25em; background-color: #f6f6f6;}
+
+.container {width: 100%;}
+.col-md-2 {top: 0; bottom: 0; position: fixed; overflow-y: scroll; background-color: #f6f6f6; font-size: 0.9em; padding-top: 2em;}
+.col-md-10 {margin-left: 16.6666667%;}
+.btn-primary {white-space: normal;}
+@media only screen and (max-width: 992px) {.col-md-2 {position: relative;} .col-md-10 {margin-left: 0%;}}
+
+a.btn-primary, button.btn-primary {background-color: #11335d; border-color: #11335d; text-transform: uppercase; margin-top: 5%;}
+
+.toc {list-style: none; margin-left: 0; padding-left: 0;}
+.toc li {margin-top: 0; margin-bottom: 0; margin-left: 1em;}
+.toc li p {margin-top: 0; margin-bottom: 0.5em; margin-left: 0;}
+.toc li h5 {margin-top: 0; margin-bottom: 0; margin-left: -1em;}
+
+
+.reduced-page-width {width: 85%; margin: 0 auto;}
+
+@media print {
+    .col-md-2 {width: 0; display: none;}
+    .col-md-10 {margin-left: 0;}
+}
+
+h1 {color: #002452; font-size: 2em; font-weight: bold; margin-top: 1em; margin-bottom: 0.67em;}
+h2 {color: #002452; font-size: 1.67em; margin-top: 0.75em; margin-bottom: 0.25em; font-weight: bold;}
+h3 {color: #403c3d; font-size: 1.50em; font-weight: bold; text-transform: none; margin-top: 1.3em; margin-bottom: 0.875em;}
+h4 {color: #403c3d; font-size: 1.35em; margin-top: 1.55em; margin-bottom: 0.6em; font-weight: bold;}
+h5 {color: #403c3d; font-size: 1.1em; font-weight: bold; margin-top: 1.25em; margin-bottom: 0.625em;}
+
+p, ol, ul, {margin-top: 0; margin-bottom: 1.5%;}
+table+p {margin-top: 1.5%;}
+
+li {margin-left: 5%;}
+
+.frenblockquote {margin-left: 20%; width: 60%; text-align: justify;}
+
+.frenpullquote {margin-left: 10%; width: 80%;}
+.frenpullquote p {font-size: 1.15rem; margin-bottom: 1%;}
+.frenpullquote p:last-child {font-size: 1.05rem; text-align: right; margin-bottom: 4%;}
+
+.frenbiblio {text-indent: -5%; padding-left: 5%;}
+
+.frentextbox {border: 1px solid black; border-radius: 10px; padding: 2%; background-color: #bedbed; margin-bottom: 1.5%; margin-top: 1.5%;}
+.frentextbox p:first-child {font-weight: bold;}
+
+.frentabletitle {margin: 0 auto; margin-bottom: 5%; width: 40%;}
+.frentabletitle tr {border-bottom: 1px solid #002452; border-right: 1px solid #002452; border-left: 1px solid #002452;}
+.frentabletitle caption {background-color: #002452; color: white; padding: 0.5em; font-weight: bold; text-align: center;}
+.frentabletitle td {padding: 0.5em; white-space: nowrap; border: 1px solid #002452;}
+.frentabletitle td p {margin: 0;}
+
+.frentableverbs {margin: 0 auto; margin-bottom: 5%; max-wdith: 40%;}
+.frentableverbs td {border: 1px solid #002452; padding: 0.5em; white-space: nowrap;}
+.frentableverbs tr:first-child {background-color: #e6e6e6; text-align: center; font-weight: bold;}
+.frentableverbs td p {margin: 0;}
+
+.frenindent {text-indent: -5%; padding-left: 5%;}
+
+.frenlastlineindent p:first-child {margin-bottom: 0;}
+.frenlastlineindent p:last-child {padding-left: 5%;}
+
+.frentopalign td {vertical-align: top; padding-bottom: 0; padding-top: 0; padding-right: 0;}
+table.frentopalign {width: 99%; margin: 0 auto; margin-bottom: 1.5%;}
