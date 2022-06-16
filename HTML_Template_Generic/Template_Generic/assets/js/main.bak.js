@@ -563,7 +563,7 @@ var app1 = new Vue({
 var app2 = new Vue({
   el: '.container-fluid',
   data: {
-    FallTuitionDue: 'Sep 30',
+    FallTuitionDue: 'Sep 1',
     FallClassesStart: 'Sep 6',
     FallAdd: 'Sep 19',
     FallFinDrop: 'Sep 19',
@@ -581,7 +581,7 @@ var app2 = new Vue({
     WinterAccomm: 'TBD',
     WinterClassesEnd: 'Apr 8',
     WinterExams: 'Apr 14-30',
-    FallWinterTuitionDue: 'Sep 30',
+    FallWinterTuitionDue: 'Sep 1',
     FallWinterClassesStart: 'Sep 7',
     FallWinterAdd: 'Sep 20',
     FallWinterFinDrop: 'Sep 20',
