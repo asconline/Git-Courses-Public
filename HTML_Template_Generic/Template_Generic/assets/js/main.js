@@ -13,13 +13,13 @@ function ChangeDates () {
 // 	set the start dates as Monday one week prior to semester start
 var indateFall = new Date("August 29, 2022 00:00:01"); 	// input date
 var fallStart = new Date("September 6, 2022 00:00:01");  // Semester fall start date
-var indateWinter = new Date("January 3, 2022 00:00:01"); 	// input date
+var indateWinter = new Date("January 2, 2023 00:00:01"); 	// input date
 var indateSummer = new Date("May 2, 2022 00:00:01"); 	// input date
 var indateLSummer = new Date("June 27, 2022 00:00:01"); 	// input date
 
 // exam dates
 var examF = "Dec 8-22, 2022";
-var examW = "Apr 14-30, 2022";
+var examW = "Apr 14-28, 2023";
 var examNS1 = "Jun 20-22, 2022";
 var examNS2 = "Aug 2-10, 2022";
 var examS = "Aug 15-17, 2022";
@@ -572,14 +572,14 @@ var app2 = new Vue({
     FallAccomm: 'TBD',
     FallClassesEnd: 'Dec 5',
     FallExams: 'Dec 8-22',
-    WinterTuitionDue: 'Jan 10',
-    WinterClassesStart: 'Jan 10',
-    WinterAdd: 'Jan 21',
-    WinterFinDrop: 'Jan 21',
-    WinterAcadDrop: 'Mar 4',
-    WinterExamCentre: 'N/A',
+    WinterTuitionDue: 'Jan 2',
+    WinterClassesStart: 'Jan 9',
+    WinterAdd: 'Jan 20',
+    WinterFinDrop: 'Jan 20',
+    WinterAcadDrop: 'Mar 3',
+    WinterExamCentre: 'TBD',
     WinterAccomm: 'TBD',
-    WinterClassesEnd: 'Apr 8',
+    WinterClassesEnd: 'Apr 10',
     WinterExams: 'Apr 14-30',
     FallWinterTuitionDue: 'Sep 1',
     FallWinterClassesStart: 'Sep 7',
@@ -589,7 +589,7 @@ var app2 = new Vue({
     FallWinterFallAccomm: 'TBD',
     FallWinterFallExams: 'Dec 8-22',
     FallWinterAcadDrop: 'Mar 4',
-    FallWinterWinterExamCentre: 'N/A',
+    FallWinterWinterExamCentre: 'TBD',
     FallWinterWinterAccomm: 'TBD',
     FallWinterClassesEnd: 'Apr 8',
     FallWinterWinterExams: 'Apr 14-30',
