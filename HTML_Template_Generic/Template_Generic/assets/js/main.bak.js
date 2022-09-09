@@ -616,7 +616,7 @@ var app2 = new Vue({
     SummerAdd: 'Jul 8',
     SummerFinDrop: 'Jul 8',
     SummerExamCentre: 'N/A',
-    SummerAccomm: 'N/A',
+    SummerAccomm: 'Jul 10',
     SummerAcadDrop: 'Jul 29',
     SummerClassesEnd: 'Aug 12',
     SummerExams: 'Aug 15-17'
