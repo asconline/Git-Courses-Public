@@ -14,15 +14,15 @@ function ChangeDates () {
 var indateFall = new Date("August 29, 2022 00:00:01"); 	// input date
 var fallStart = new Date("September 6, 2022 00:00:01");  // Semester fall start date
 var indateWinter = new Date("January 2, 2023 00:00:01"); 	// input date
-var indateSummer = new Date("May 2, 2022 00:00:01"); 	// input date
-var indateLSummer = new Date("June 27, 2022 00:00:01"); 	// input date
+var indateSummer = new Date("April 24, 2023 00:00:01"); 	// input date
+var indateLSummer = new Date("June 26, 2023 00:00:01"); 	// input date
 
 // exam dates
 var examF = "Dec 8-22, 2022";
 var examW = "Apr 14-28, 2023";
-var examNS1 = "Jun 20-22, 2022";
-var examNS2 = "Aug 2-10, 2022";
-var examS = "Aug 15-17, 2022";
+var examNS1 = "Jun 15-17, 2023";
+var examNS2 = "Jul 25 - Aug 2, 2023";
+var examS = "Aug 17-19, 2023";
 
 // end of the part that needs to be updated
 
