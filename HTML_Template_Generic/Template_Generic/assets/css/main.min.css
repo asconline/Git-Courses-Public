@@ -8,7 +8,6 @@ button.btn-primary:active, button.btn-secondary:active {
 /** Tables **/
 .table > thead > tr > th {
   border-bottom: none;
-  padding: 1%;
 }
 
 @media screen and (max-width: 767px) {
@@ -72,39 +71,28 @@ button.btn-primary:active, button.btn-secondary:active {
 /* Fonts Set in course */
 html,
 body {
-  color: #403c3d;
-  font-size: 100%;
+  color: #E57231;
+  font-size: 16px;
   font-weight: 400;
 }
 
 @media (min-width: 1170px) {
   html,
   body {
-    font-size: 112.5%;
+    font-size: 18px;
   }
 }
 
 /** Link Styling **/
-a:link, a.btn-top:link, a.btn-bottom:link {
+a {
   color: #006FBF;
   text-decoration: none;
 }
 
-a:visited, a.btn-top:visited, a.btn-bottom:visited {
-  color: #004a80;
+a:hover, a:focus, a:active {
+  color: #006FBF;
   text-decoration: none;
 }
-
-a:hover, a.btn-top:hover, a.btn-bottom:hover {
-  color: #006FBF;
-  text-decoration: underline;
-}
-
-a:active, a.btn-top.active, a.btn-bottom.active {
-  color: #006FBF;
-  text-decoration: underline;
-}
-
 
 /* Typography - Extra Small, Small */
 h1,
@@ -315,6 +303,17 @@ blockquote {
   border-left: 5px solid #E6EAF0;
 }
 
+/** Link Styling **/
+a {
+  color: #006FBF;
+  text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+  color: #006FBF;
+  text-decoration: none;
+}
+
 /** Tooltip / Popover Styling **/
 .tooltip.in {
   opacity: 1;
@@ -394,10 +393,7 @@ button.btn-primary {
   background-color: #006FBF;
   border-color: #006FBF;
   color: #FFFFFF;
-  white-space: normal;
 }
-
-a.btn {color: white;}
 
 button.btn-primary:hover, button.btn-primary:focus {
   background-color: #1C5295;
@@ -462,7 +458,7 @@ ul {
 
 ol li,
 ul li {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 /* Box Number List */
@@ -752,6 +748,8 @@ ol.list-step p {
 
 /** Tables **/
 .table-responsive {
+  border: 1px solid #D3D9E3;
+  border-radius: 6px;
   margin-bottom: 20px;
 }
 
@@ -1160,7 +1158,7 @@ ol.list-step p {
 .card button {
   border: none;
   padding: 0;
- }
+}
 
 .card .content {
   -webkit-backface-visibility: visible;
@@ -1727,6 +1725,12 @@ h2 {
   color: #565A5C;
 }
 
+a:hover,
+a:focus,
+a:active {
+  color: #565A5C;
+}
+
 ol.box-number li:before {
   background-color: #006FBF;
   color: #FFFFFF;
@@ -1969,272 +1973,5 @@ footer {
   }
 }
 
-/* Add this class to hide elements on print */
-@media print {
-	.no-print {
-		display: none;
-		}
-}
-
-/* FormatModule.js Printing Options */
-@media print {
-#section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8, #section9, #section10, #section11, #section12, #section13, #section14, #section15, #section16, #section17, #section18, #section19, #section20, #section21, #section22, #section23, #section24, #section25, #section26, #section27, #section28, #section29, #section30, #section31, #section32, #section33, #section34, #section35, #section36, #section37, #section38, #section39, #section40, #section41, #section42, #section43, #section44, #section45, #section46, #section47, #section48, #section49, #section50, #section51, #section52, #section53, #section54, #section55, #section56, #section57, #section58, #section59, #section60, #section61, #section62, #section63, #section64, #section65, #section66, #section67, #section68, #section69, #section70, #section71, #section72, #section73, #section74, #section75, #section76, #section77, #section78, #section79, #section80, #section81, #section82, #section83, #section84, #section85, #section86, #section87, #section88, #section89, #section90, #section91, #section92, #section93, #section94, #section95, #section96, #section97, #section98, #section99, #section100 {
-	display: block;
-	opacity: 1;
-	}
-
-#step1, #step2, #step3, #step4, #step5, #step6, #step7, #step8, #step9, #step10, #step11, #step12, #step13, #step14, #step15, #step16, #step17, #step18, #step19, #step20 {
-  display: block !important;
-  height: auto !important;
-  opacity: 1;
- 	}
-}
-
-
-
-.glyphicon {
-    color: black;
-    padding-right: 5%;
-}
-
-/* The side navigation menu */
-.sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #f6f6f6; /* Light Grey*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 40px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
-
-/* The navigation menu links */
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    display: block;
-    transition: 0.3s;
-}
-
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-    margin-left: 250px;
-    transition: margin-left .5s;
-    padding: 20px;
-}
-
-/* Set mySidenav initial width */
-#mySidenav {
-    width: 250px;
-}
-
-/* Set sidenav title padding */
-#mySidenav h4 {
-    padding-left: 5%;
-}
-
-/* Closes sidenav for printing */
-@media print {
-    #mySidenav {
-        width: 0;
-    }
-    #main {
-        margin-left: 0;
-    }
-}
-/*Robert May Style*/
-table.robertmay {
-	width: 80%;
-	border: 0px;
-	border-collapse: collapse;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 1em;
-	margin-bottom: 1em;
-}
-table.robertmay td {
-	border: 1px solid #ddd;
-}
-
-/*Table cell padding */
-td {
-	padding: 1%;
-}
-
-.glyphicon {padding-right: 2%;}
-
-/* Remove URL from Print */
-@media print {
-a:after{content:" (" attr(href) ") "; display: none;}
-}
-
-/* Remove italics from address tag */
-address {
-font-style: normal;
-}
-
-@media print {
-
-  [class*="col-sm-"] {
-    float: left;
-  }
-
-  .col-sm-12 {
-    width:100% !important;
-  }
-
-  .col-sm-11 {
-    width:91.66666667% !important;
-  }
-
-  .col-sm-10 {
-    width:83.33333333% !important;
-  }
-
-  .col-sm-9 {
-    width:75% !important;
-  }
-
-  .col-sm-8 {
-    width:66.66666667% !important;
-  }
-
-  .col-sm-7 {
-    width:58.33333333% !important;
-  }
-
-  .col-sm-6 {
-    width:50% !important;
-  }
-
-  .col-sm-5 {
-    width:41.66666667% !important;
-  }
-
-  .col-sm-4 {
-    width:33.33333333% !important;
-  }
-
-  .col-sm-3 {
-    width:25% !important;
-  }
-
-  .col-sm-2 {
-    width:16.66666667% !important;
-  }
-
-  .col-sm-1 {
-    width:8.33333333% !important;
-  }
-
-  .col-sm-1,
-  .col-sm-2,
-  .col-sm-3,
-  .col-sm-4,
-  .col-sm-5,
-  .col-sm-6,
-  .col-sm-7,
-  .col-sm-8,
-  .col-sm-9,
-  .col-sm-10,
-  .col-sm-11,
-  .col-sm-12 {
-  float: left !important;
-  }
-
-  body {
-    margin: 0;
-    padding: 0 !important;
-    min-width: 768px;
-  }
-
-  .container-fluid {
-    width: auto;
-    min-width: 750px;
-  }
-}
-
-
-.table-responsive {
-  border: none;
-}
-
-
-/* Word Break all URLs */
-#main a {
-  word-break: break-word;
-}
-
-/*Next section button*/
-.btn-bottom {
-  background-color: #fcfcfc;
-  margin-top: 3%;
-  padding-top: 2%;
-  padding-bottom: 3%;
-  border-bottom: 0;
-  border-left: 0;
-  border-right: 0;
-  border-top: 1px solid #8b8b8b;
-  border-radius: 0;
-  font-size: 1em;
-}
-
-/*Previous Section button*/
-.btn-top {
-  background-color: #fcfcfc;
-  margin-bottom: 3%;
-  padding-top: 3%;
-  padding-bottom: 2%;
-  border-bottom: 0;
-  border-left: 0;
-  border-right: 0;
-  border-bottom: 1px solid #8b8b8b;
-  border-radius: 0;
-  font-size: 1em;
-}
-
-/*Module table of contents formatting*/
-.moduletoc {
-  list-style: none outside;
-  padding-left: 0;
-  margin-left: 0;
-}
-
-.moduletoc li {
-  padding-bottom: 0;
-  padding-top: 0;
-}
-
-/*Assignment Quicklinks*/
-.quicklink li {padding: 0.3em; list-style-type: none;}
-ul.quicklink {border-left: 1px solid #c6c6c6; padding: 0; border-right: 1px solid #c6c6c6; border-radius: 10px;}
-.quicklink > li:first-child {border-top: 1px solid #c6c6c6; border-radius: 10px 10px 0 0;}
-.quicklink li:last-child {border-radius: 10px;}
-.quicklink li {border-bottom: 1px solid #c6c6c6;}
-.quicklink ul li {padding: 0.15em; border: 0; list-style-type: none;}
-
-/*Navbar Dropdown Submenus*/
-.dropdown-submenu{position:relative}
-.dropdown-submenu>.dropdown-menu{top:0;left:100%;margin-top:-6px;margin-left:-1px;border-radius:0 4px 4px}
-.dropdown-submenu:hover>.dropdown-menu{display:block}
-@media (max-width:767px){.dropdown-submenu>.dropdown-menu{display:block}.dropdown-submenu>a{padding:14px 20px 3px!important;font-size:12px;line-height:1.428571429!important;color:#777!important;border-top:1px solid #e5e5e5;margin-top:9px}}
-.dropdown-submenu>a>.caret{display:inline-block;-webkit-transform:rotate(270deg);transform:rotate(270deg);position:absolute;margin-top:-2px;right:8px;top:50%}
-@media (max-width:767px){.dropdown-submenu>a>.caret{display:none!important}.break-xs{width:100%!important}}
-.navbar-fixed-bottom .dropdown-submenu>.dropdown-menu{bottom:0;border-radius:4px 4px 4px 0}
-.navbar-fixed-bottom .dropdown-submenu>a>.caret{-webkit-transform:rotate(90deg);transform:rotate(90deg)}
-.navbar-right .dropdown-submenu>.dropdown-menu{right:100%;left:auto;margin-left:10px;border-radius:4px 0 4px 4px}
-
-/*Add padding to table headers*/
-.table-bordered th, td {padding: 2%;}
+/* Remove Border from H5P */
+iframe[src^="/d2l"] {border: none;}

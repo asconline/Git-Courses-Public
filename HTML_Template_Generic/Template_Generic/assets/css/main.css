@@ -1818,7 +1818,7 @@ ul.list-icon.list-cross span:before {
 .fullscreen-splash {
   position: relative;
   overflow: hidden;
-  /*	
+  /*
   margin-left: -15px;
 	margin-right: -15px;*/
 }
@@ -1972,3 +1972,6 @@ footer {
     position: relative;
   }
 }
+
+/* Remove Border from H5P */
+iframe[src^="/d2l"] {border: none;}
