@@ -2239,5 +2239,5 @@ ul.quicklink {border-left: 1px solid #c6c6c6; padding: 0; border-right: 1px soli
 /*Add padding to table headers*/
 .table-bordered th, td {padding: 2%;}
 
-/* Remove Border from H5P */
+/* Remove Border from H5P iframes */
 iframe[src^="/d2l"] {border: none;}
