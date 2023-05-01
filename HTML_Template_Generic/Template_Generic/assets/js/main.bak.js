@@ -21,7 +21,7 @@ var indateLSummer = new Date("June 26, 2023 00:00:01"); 	// input date
 var examF = "Dec 8-22, 2022";
 var examW = "Apr 14-28, 2023";
 var examNS1 = "Jun 15-17, 2023";
-var examNS2 = "Jul 25 - Aug 2, 2023";
+var examNS2 = "Jul 25 - Aug 3, 2023";
 var examS = "Aug 17-19, 2023";
 
 // end of the part that needs to be updated
