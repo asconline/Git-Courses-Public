@@ -11,14 +11,14 @@ function ChangeDates () {
 
 //	this is the only area that needs to be updated
 // 	set the start dates as Monday one week prior to semester start
-var indateFall = new Date("August 29, 2022 00:00:01"); 	// input date
+var indateFall = new Date("August 28, 2023 00:00:01"); 	// input date
 var fallStart = new Date("September 6, 2022 00:00:01");  // Semester fall start date
 var indateWinter = new Date("January 2, 2023 00:00:01"); 	// input date
 var indateSummer = new Date("April 24, 2023 00:00:01"); 	// input date
 var indateLSummer = new Date("June 26, 2023 00:00:01"); 	// input date
 
 // exam dates
-var examF = "Dec 8-22, 2022";
+var examF = "Dec 7-21, 2023";
 var examW = "Apr 14-28, 2023";
 var examNS1 = "Jun 15-17, 2023";
 var examNS2 = "Jul 25 - Aug 3, 2023";
