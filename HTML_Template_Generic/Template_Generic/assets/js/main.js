@@ -360,10 +360,10 @@ document.getElementsByTagName("body")[0].innerHTML = document.getElementsByTagNa
 
 /*START Change all LaTex to size 11pt font*/
 $( document ).ready(function() {
-  var y = document.querySelectorAll('math').length;
+  var y = document.querySelectorAll('mstyle').length;
 
   for (var i = 0; i < y; i++) {
-  document.getElementsByTagName("math")[i].parentElement.style.fontSize = "11pt";
+  document.getElementsByTagName("mstyle")[i].setAttribute("mathsize", "0.6");
   }
 });
 /*END LaTex change*/
