@@ -22,7 +22,7 @@ var examF = "Dec 7-21, 2023";
 var examW = "Apr 11-25, 2024";
 var examNS1 = "Jun 20-22, 2024";
 var examNS2 = "Jul 29 - Aug 4, 2024";
-var examS = "Aug 15-17, 2023";
+var examS = "Aug 15-17, 2024";
 
 // end of the part that needs to be updated
 
