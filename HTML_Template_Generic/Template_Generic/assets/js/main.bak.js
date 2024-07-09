@@ -18,8 +18,8 @@ var indateSummer = new Date("April 29, 2024 00:00:01"); 	// input date
 var indateLSummer = new Date("June 24, 2024 00:00:01"); 	// input date
 
 // exam dates
-var examF = "Dec 5-19, 2024";
-var examW = "TBA";
+var examF = "Dec 7-21, 2024";
+var examW = "Apr 7-23, 2025";
 var examNS1 = "Jun 20-22, 2024";
 var examNS2 = "Jul 29 - Aug 4, 2024";
 var examS = "Aug 15-17, 2024";
@@ -226,7 +226,7 @@ for(var i = 0; i < 16; i++){ // cycle through weeks
         arrdaysF[i][j] = month.toString() +" "+  day.toString();
         movedateF.setDate(movedateF.getDate()+1); // increment the day by one
         //checks and intersperses a reading week
-       	if(i == 5){
+       	if(i == 6){
        		if(j == 6){
               	movedateF.setDate(movedateF.getDate()+7);
             }
