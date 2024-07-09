@@ -226,7 +226,7 @@ for(var i = 0; i < 16; i++){ // cycle through weeks
         arrdaysF[i][j] = month.toString() +" "+  day.toString();
         movedateF.setDate(movedateF.getDate()+1); // increment the day by one
         //checks and intersperses a reading week
-       	if(i == 5){
+       	if(i == 6){
        		if(j == 6){
               	movedateF.setDate(movedateF.getDate()+7);
             }
