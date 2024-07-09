@@ -122,7 +122,7 @@ for(var i = 0; i < 16; i++){ // cycle through weeks
 
      mvWeekF.setDate(mvWeekF.getDate()+1); // bring it to the next Monday
      //checks and intersperses a reading week
-     if(i == 6){
+     if(i == 7){
  		dayTue = mvWeekF.getDate()+1;
  		monthMon = mvWeekF.toLocaleString("en-us", { month: "short" });
  		mvWeekF.setDate(mvWeekF.getDate()+4); // brings it to Friday

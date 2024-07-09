@@ -4,7 +4,7 @@ document.body.scrollTop = document.documentElement.scrollTop = 0;
 
 function DivSwitch() {
 var current = new Date();
-var week1 = new Date("September 1, 2018 00:00:00");
+var week1 = new Date("September 1, 2018 00:00:00"); 
 var week2 = new Date("September 22, 2018 00:00:00");
 var week3 = new Date("October 6, 2018 00:00:00");
 var week4 = new Date("October 20, 2018 00:00:00");
