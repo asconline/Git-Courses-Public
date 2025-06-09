@@ -18,8 +18,8 @@ var indateSummer = new Date("April 28, 2025 00:00:01"); 	// input date
 var indateLSummer = new Date("June 23, 2025 00:00:01"); 	// input date
 
 // exam dates
-var examF = "Dec 7-21, 2024";
-var examW = "Apr 7-23, 2025";
+var examF = "TBA";
+var examW = "TBA";
 var examNS1 = "Jun 19-21, 2025";
 var examNS2 = "Jul 27 - Aug 3, 2025";
 var examS = "Aug 15-17, 2025";
