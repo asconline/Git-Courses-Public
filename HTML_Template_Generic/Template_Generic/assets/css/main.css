@@ -2241,3 +2241,18 @@ ul.quicklink {border-left: 1px solid #c6c6c6; padding: 0; border-right: 1px soli
 
 /* Remove Border from H5P iframes */
 iframe[src^="/d2l"] {border: none;}
+
+/*Module Title Formating*/
+.divider {
+  background-color: #662d91;
+  width: 100%;
+  border: 1px solid #662d91;
+  margin: 1em auto;
+}
+
+.section-block {
+  text-align: center;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  background-color: #f6f6f6;
+}
