@@ -11,9 +11,9 @@ function ChangeDates () {
 
 //	this is the only area that needs to be updated
 // 	set the start dates as Monday one week prior to semester start
-var indateFall = new Date("August 26, 2024 00:00:01"); 	// input date
+var indateFall = new Date("August 25, 2025 00:00:01"); 	// input date
 var fallStart = new Date("September 3, 2024 00:00:01");  // Semester fall start date
-var indateWinter = new Date("December 30, 2024 00:00:01"); 	// input date
+var indateWinter = new Date("December 29, 2025 00:00:01"); 	// input date
 var indateSummer = new Date("April 28, 2025 00:00:01"); 	// input date
 var indateLSummer = new Date("June 23, 2025 00:00:01"); 	// input date
 
