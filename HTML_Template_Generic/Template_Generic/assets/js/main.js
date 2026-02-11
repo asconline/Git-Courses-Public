@@ -15,7 +15,7 @@ var indateFall = new Date("August 25, 2025 00:00:01"); 	// input date
 var fallStart = new Date("September 2, 2025 00:00:01");  // Semester fall start date
 var indateWinter = new Date("December 29, 2025 00:00:01"); 	// input date
 var indateSummer = new Date("April 27, 2026 00:00:01"); 	// input date
-var indateLSummer = new Date("June 22, 2026 00:00:01"); 	// input date
+var indateLSummer = new Date("June 29, 2026 00:00:01"); 	// input date
 
 // exam dates
 var examF = "Dec 5-20, 2025";
