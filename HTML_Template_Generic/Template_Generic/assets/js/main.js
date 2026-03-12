@@ -122,7 +122,7 @@ for(var i = 0; i < 16; i++){ // cycle through weeks
 
      mvWeekF.setDate(mvWeekF.getDate()+1); // bring it to the next Monday
      //checks and intersperses a reading week
-     if(i == 6){
+     if(i == 6){ // change i to the week in which the reading week falls
  		dayTue = mvWeekF.getDate()+1;
  		monthMon = mvWeekF.toLocaleString("en-us", { month: "short" });
  		mvWeekF.setDate(mvWeekF.getDate()+4); // brings it to Friday
@@ -133,7 +133,7 @@ for(var i = 0; i < 16; i++){ // cycle through weeks
      }
 
     // WINTER wks
-    // intersperces a reading week after week 5
+    // intersperces a reading week
     dayMon = mvWeekW.getDate();
     nmonthMon = mvWeekW.getMonth();
     monthMon = mvWeekW.toLocaleString("en-us", { month: "short" });
@@ -156,7 +156,7 @@ for(var i = 0; i < 16; i++){ // cycle through weeks
 
 	mvWeekW.setDate(mvWeekW.getDate()+1); // bring it to the next Monday
     //checks and intersperses a reading week
-    if(i == 6){
+    if(i == 6){ // change i to the week in which the reading week falls
 		dayTue = mvWeekW.getDate()+1;
 		monthMon = mvWeekW.toLocaleString("en-us", { month: "short" });
 		mvWeekW.setDate(mvWeekW.getDate()+4); // brings it to Friday
@@ -226,7 +226,7 @@ for(var i = 0; i < 16; i++){ // cycle through weeks
         arrdaysF[i][j] = month.toString() +" "+  day.toString();
         movedateF.setDate(movedateF.getDate()+1); // increment the day by one
         //checks and intersperses a reading week
-       	if(i == 6){
+       	if(i == 6){ // change i to the week in which the reading week falls
        		if(j == 6){
               	movedateF.setDate(movedateF.getDate()+7);
             }
@@ -239,7 +239,7 @@ for(var i = 0; i < 16; i++){ // cycle through weeks
         arrdaysW[i][j] = month.toString() +" "+  day.toString();
         movedateW.setDate(movedateW.getDate()+1); // increment the day by one
        	//checks and intersperses a reading week
-       	if(i == 6){
+       	if(i == 6){ // change i to the week in which the reading week falls
        		if(j == 6){
               	movedateW.setDate(movedateW.getDate()+7);
             }
