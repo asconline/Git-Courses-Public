@@ -29,8 +29,9 @@ var examS = "Aug 19-21, 2026";
 // DO NOT MESS AROUND BEYOND HERE
 // UNLESS YOU KNOW WHAT YOU ARE DOING
 
-// Calculated dates
-var readingweekW; // calculated post wk 5 Mon-Fri
+// Reading Week dates
+// See below to adjust variables to set the reading week to the proper week
+var readingweekW;
 var readingweekF;
 
 // create the arrays
