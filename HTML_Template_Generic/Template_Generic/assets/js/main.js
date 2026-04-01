@@ -632,3 +632,5 @@ $("a").not("[data-toggle*='tab']").click(function() {
     localStorage.setItem("sectionHrefNumber", SplitSectionHrefNumber);
 });
 /*END Retrieve section number*/
+
+/*END OF FILE*/
