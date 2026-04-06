@@ -11,14 +11,14 @@ function ChangeDates () {
 
 //	this is the only area that needs to be updated
 // 	set the start dates as Monday one week prior to semester start
-var indateFall = new Date("August 25, 2025 00:00:01"); 	// input date
-var fallStart = new Date("September 2, 2025 00:00:01");  // Semester fall start date
+var indateFall = new Date("August 31, 2026 00:00:01"); 	// input date
+var fallStart = new Date("September 8, 2026 00:00:01");  // Semester fall start date
 var indateWinter = new Date("December 29, 2025 00:00:01"); 	// input date
 var indateSummer = new Date("April 27, 2026 00:00:01"); 	// input date
 var indateLSummer = new Date("June 29, 2026 00:00:01"); 	// input date
 
 // exam dates
-var examF = "Dec 5-20, 2025";
+var examF = "Dec 10-23, 2026";
 var examW = "Apr 9-23, 2026";
 var examNS1 = "Jun 18-20, 2026";
 var examNS2 = "Jul 30 - Aug 7, 2026";
@@ -29,9 +29,8 @@ var examS = "Aug 19-21, 2026";
 // DO NOT MESS AROUND BEYOND HERE
 // UNLESS YOU KNOW WHAT YOU ARE DOING
 
-// Reading Week dates
-// See below to adjust variables to set the reading week to the proper week
-var readingweekW;
+// Calculated dates
+var readingweekW; // calculated post wk 5 Mon-Fri
 var readingweekF;
 
 // create the arrays
@@ -115,7 +114,7 @@ for(var i = 0; i < 16; i++){ // cycle through weeks
     else{
         if ((nmonthSun - nmonthMon) == 0) {
         arrweekF[i] = monthMon.toString() + " " + dayMon.toString() +" - " + daySun.toString()+ "\n";
-    }m
+    }
     else{
     arrweekF[i] = monthMon.toString() + " " + dayMon.toString() +" - " + monthSun.toString() + " " +daySun.toString()+ "\n";
     }
@@ -123,7 +122,7 @@ for(var i = 0; i < 16; i++){ // cycle through weeks
 
      mvWeekF.setDate(mvWeekF.getDate()+1); // bring it to the next Monday
      //checks and intersperses a reading week
-     if(i == 6){ // change i to the week in which the reading week falls
+     if(i == 5){ // change i to the week in which the reading week falls
  		dayTue = mvWeekF.getDate()+1;
  		monthMon = mvWeekF.toLocaleString("en-us", { month: "short" });
  		mvWeekF.setDate(mvWeekF.getDate()+4); // brings it to Friday
@@ -134,7 +133,7 @@ for(var i = 0; i < 16; i++){ // cycle through weeks
      }
 
     // WINTER wks
-    // intersperces a reading week
+    // intersperces a reading week after week 5
     dayMon = mvWeekW.getDate();
     nmonthMon = mvWeekW.getMonth();
     monthMon = mvWeekW.toLocaleString("en-us", { month: "short" });
@@ -227,7 +226,7 @@ for(var i = 0; i < 16; i++){ // cycle through weeks
         arrdaysF[i][j] = month.toString() +" "+  day.toString();
         movedateF.setDate(movedateF.getDate()+1); // increment the day by one
         //checks and intersperses a reading week
-       	if(i == 6){ // change i to the week in which the reading week falls
+       	if(i == 5){  // change i to the week in which the reading week falls
        		if(j == 6){
               	movedateF.setDate(movedateF.getDate()+7);
             }
@@ -240,7 +239,7 @@ for(var i = 0; i < 16; i++){ // cycle through weeks
         arrdaysW[i][j] = month.toString() +" "+  day.toString();
         movedateW.setDate(movedateW.getDate()+1); // increment the day by one
        	//checks and intersperses a reading week
-       	if(i == 6){ // change i to the week in which the reading week falls
+       	if(i == 6){  // change i to the week in which the reading week falls
        		if(j == 6){
               	movedateW.setDate(movedateW.getDate()+7);
             }
@@ -358,6 +357,7 @@ document.getElementsByTagName("body")[0].innerHTML = document.getElementsByTagNa
 document.getElementsByTagName("body")[0].innerHTML = document.getElementsByTagName("body")[0].innerHTML.replace(/readingweekF/g, readingweekF);
 }
 /*END of Change Date function*/
+
 
 /*START Change all LaTex to size 11pt font*/
 $( document ).ready(function() {
