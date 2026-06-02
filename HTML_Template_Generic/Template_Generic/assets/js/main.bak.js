@@ -13,13 +13,13 @@ function ChangeDates () {
 // 	set the start dates as Monday one week prior to semester start
 var indateFall = new Date("August 31, 2026 00:00:01"); 	// input date
 var fallStart = new Date("September 8, 2026 00:00:01");  // Semester fall start date
-var indateWinter = new Date("December 29, 2025 00:00:01"); 	// input date
+var indateWinter = new Date("December 28, 2026 00:00:01"); 	// input date
 var indateSummer = new Date("April 27, 2026 00:00:01"); 	// input date
 var indateLSummer = new Date("June 29, 2026 00:00:01"); 	// input date
 
 // exam dates
 var examF = "Dec 10-23, 2026";
-var examW = "Apr 9-23, 2026";
+var examW = "Apr 9-23, 2027";
 var examNS1 = "Jun 18-20, 2026";
 var examNS2 = "Jul 30 - Aug 7, 2026";
 var examS = "Aug 19-21, 2026";
@@ -123,7 +123,7 @@ for(var i = 0; i < 16; i++){ // cycle through weeks
 
      mvWeekF.setDate(mvWeekF.getDate()+1); // bring it to the next Monday
      //checks and intersperses a reading week
-     if(i == 5){ // change i to the week in which the reading week falls
+     if(i == 5){ // change i to the week in which the Fall reading week is scheduled
  		dayTue = mvWeekF.getDate()+1;
  		monthMon = mvWeekF.toLocaleString("en-us", { month: "short" });
  		mvWeekF.setDate(mvWeekF.getDate()+4); // brings it to Friday
@@ -157,7 +157,7 @@ for(var i = 0; i < 16; i++){ // cycle through weeks
 
 	mvWeekW.setDate(mvWeekW.getDate()+1); // bring it to the next Monday
     //checks and intersperses a reading week
-    if(i == 6){ // change i to the week in which the reading week falls
+    if(i == 6){ // change i to the week in which the Winter reading week is scheduled
 		dayTue = mvWeekW.getDate()+1;
 		monthMon = mvWeekW.toLocaleString("en-us", { month: "short" });
 		mvWeekW.setDate(mvWeekW.getDate()+4); // brings it to Friday
@@ -227,7 +227,7 @@ for(var i = 0; i < 16; i++){ // cycle through weeks
         arrdaysF[i][j] = month.toString() +" "+  day.toString();
         movedateF.setDate(movedateF.getDate()+1); // increment the day by one
         //checks and intersperses a reading week
-       	if(i == 5){  // change i to the week in which the reading week falls
+        if(i == 5){  // change i to the week in which the Fall reading week is scheduled
        		if(j == 6){
               	movedateF.setDate(movedateF.getDate()+7);
             }
@@ -240,7 +240,7 @@ for(var i = 0; i < 16; i++){ // cycle through weeks
         arrdaysW[i][j] = month.toString() +" "+  day.toString();
         movedateW.setDate(movedateW.getDate()+1); // increment the day by one
        	//checks and intersperses a reading week
-       	if(i == 6){  // change i to the week in which the reading week falls
+        if(i == 6){  // change i to the week in which the Winter reading week is scheduled
        		if(j == 6){
               	movedateW.setDate(movedateW.getDate()+7);
             }
